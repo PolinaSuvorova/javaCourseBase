@@ -37,9 +37,9 @@ public class EqualsHashCodeExample {
 }
 
 class Cat {
-    String name;
-    Integer age;
-    String color;
+    final String name;
+    final Integer age;
+    final String color;
 
     public Cat(String name, Integer age, String color) {
         this.name = name;
