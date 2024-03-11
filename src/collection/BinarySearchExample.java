@@ -28,7 +28,9 @@ public class BinarySearchExample {
         Employee11 emp1 = new Employee11(10, "Polina", "XYZ", 1000);
         Employee11 emp2 = new Employee11(9, "ina", "Z", 1500);
         Employee11 emp3 = new Employee11(1, "Sasha", "Ivanov", 2500);
-        emps.add(emp1); emps.add(emp2); emps.add(emp3);
+        emps.add(emp1);
+        emps.add(emp2);
+        emps.add(emp3);
         System.out.println("----List Employee BEFORE sorting");
         System.out.println(emps);
         Collections.sort(emps);
@@ -36,11 +38,11 @@ public class BinarySearchExample {
         int ind2 = Collections.binarySearch(emps, new Employee11(9, "ina", "Z", 1500));
         System.out.println(ind2);
 
-        int[] array = {1,20,-3,4,-5,2 };
+        int[] array = {1, 20, -3, 4, -5, 2};
         System.out.println(Arrays.toString(array));
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
-        ind2 = Arrays.binarySearch(array,20);
+        ind2 = Arrays.binarySearch(array, 20);
         System.out.println(ind2);
     }
 }

@@ -71,7 +71,7 @@ class IdComparator implements Comparator<EmployeeTest> {
 
     @Override
     public int compare(EmployeeTest o1, EmployeeTest o2) {
-        if (o1.getId().equals( o2.getId())) {
+        if (o1.getId().equals(o2.getId())) {
             return 0;
         } else if (o1.getId() <= o2.getId()) {
             return -1;

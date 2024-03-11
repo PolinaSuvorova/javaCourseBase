@@ -58,7 +58,7 @@ public class ArrayListExample {
         StringBuilder sb1 = new StringBuilder("Aa");
         StringBuilder sb2 = new StringBuilder("Dd");
         StringBuilder sb3 = new StringBuilder("Cc");
-        StringBuilder[] array = { sb1,sb2,sb3 };
+        StringBuilder[] array = {sb1, sb2, sb3};
         List<StringBuilder> list = Arrays.asList(array); // Длинна листа всегда такая же как и у массива
         array[0].append("!!!");
         System.out.println(list);

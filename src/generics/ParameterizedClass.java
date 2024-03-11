@@ -11,14 +11,14 @@ public class ParameterizedClass {
         Integer s2 = infoInteger.getValue();
 
         System.out.println("--------------------------------");
-        Pair<String,Integer> pair = new Pair<>("Test",1);
+        Pair<String, Integer> pair = new Pair<>("Test", 1);
         System.out.println(pair.getValue1() + "  " + pair.getValue2());
 
-        Pair<Integer,Integer> pair2 = new Pair<>(2,1);
+        Pair<Integer, Integer> pair2 = new Pair<>(2, 1);
         System.out.println(pair2.getValue1() + "  " + pair2.getValue2());
 
         System.out.println("--------------------------------");
-        OtherPair<Integer> pair3 = new OtherPair<>(2,1);
+        OtherPair<Integer> pair3 = new OtherPair<>(2, 1);
         System.out.println(pair3.getValue1() + "  " + pair3.getValue2());
 
         System.out.println("--------------------------------");
@@ -48,6 +48,7 @@ class Info<T> {
         return value;
     }
 }
+
 class InfoNumber<T extends Number> {
     private T value;
 
@@ -65,7 +66,7 @@ class InfoNumber<T extends Number> {
     }
 }
 
-class InfoNumberWithInterface<T extends Number&I1&I2> {
+class InfoNumberWithInterface<T extends Number & I1 & I2> {
     private T value;
 
     public InfoNumberWithInterface(T value) {
@@ -81,9 +82,14 @@ class InfoNumberWithInterface<T extends Number&I1&I2> {
         return value;
     }
 }
-interface I1{}
-interface I2{}
-class Pair<V1,V2>{
+
+interface I1 {
+}
+
+interface I2 {
+}
+
+class Pair<V1, V2> {
     private V1 value1;
     private V2 value2;
 
@@ -101,7 +107,7 @@ class Pair<V1,V2>{
     }
 }
 
-class OtherPair<V>{
+class OtherPair<V> {
     private V value1;
     private V value2;
 

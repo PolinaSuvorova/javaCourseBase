@@ -1,6 +1,8 @@
 package comparation;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class TestComparable {
     public static void main(String[] args) {
@@ -19,7 +21,9 @@ public class TestComparable {
         Employee emp1 = new Employee(10, "Polina", "XYZ", 1000);
         Employee emp2 = new Employee(9, "ina", "Z", 1500);
         Employee emp3 = new Employee(1, "Sasha", "Ivanov", 2500);
-        emps.add(emp1); emps.add(emp2); emps.add(emp3);
+        emps.add(emp1);
+        emps.add(emp2);
+        emps.add(emp3);
         System.out.println("----List Employee BEFORE sorting");
         System.out.println(emps);
         Collections.sort(emps);
@@ -29,7 +33,7 @@ public class TestComparable {
     }
 }
 
-class Employee implements Comparable<Employee>{
+class Employee implements Comparable<Employee> {
     private Integer id;
     private String name;
     private String surname;
@@ -74,8 +78,8 @@ class Employee implements Comparable<Employee>{
 //        return 1;
 //        return this.id -  o.getId();
 //        return this.id.compareTo(o.getId());
-        int res  = this.name.compareTo(o.getName());
-        if ( res == 0){
+        int res = this.name.compareTo(o.getName());
+        if (res == 0) {
             res = this.surname.compareTo(o.getSurname());
         }
         return res;

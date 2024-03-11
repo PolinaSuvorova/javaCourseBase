@@ -35,7 +35,7 @@ public class HashMapExample {
         // то размер массива увеличится на ещё 16 и все элементы массива будут рехешированы
         // будут переопределены все индексы по которым распределены элменты LinkedList
         // чем меньше loadFactor и больше initialCapacity, тем больше памяти будет выделяться на массив, но тем меньше будут linkedList
-Map<Integer,String> map2 = new HashMap<>(16,0.75f);
+        Map<Integer, String> map2 = new HashMap<>(16, 0.75f);
     }
 
 }
