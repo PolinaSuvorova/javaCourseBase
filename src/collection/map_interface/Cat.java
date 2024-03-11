@@ -28,18 +28,12 @@ public class Cat implements Comparable<Cat>{
         if (o == null || getClass() != o.getClass()) return false;
 
         Cat cat = (Cat) o;
-
-        if (!Objects.equals(name, cat.name)) return false;
-        if (!Objects.equals(age, cat.age)) return false;
-        return Objects.equals(color, cat.color);
+        return Objects.equals(name, cat.name);
     }
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (age != null ? age.hashCode() : 0);
-        result = 32 * result + (color != null ? color.hashCode() : 0);
-        return result;
+        return name != null ? name.hashCode() : 0;
     }
 
     @Override
