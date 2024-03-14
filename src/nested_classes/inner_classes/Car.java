@@ -1,4 +1,5 @@
 package nested_classes.inner_classes;
+
 // inner класс всегда зависим от внешнего класса
 // отдельно создать иннер класс нельзя
 public class Car {
@@ -7,12 +8,13 @@ public class Car {
     Car.Engine engine;
     private static int a;
 
-    public Car(String color, Integer doorCount,Integer horsePower) {
+    public Car(String color, Integer doorCount, Integer horsePower) {
         this.color = color;
         this.doorCount = doorCount;
         this.engine = this.new Engine(horsePower);
     }
-    public void method(){
+
+    public void method() {
         Car.Engine e = new Car.Engine(200);
         System.out.println(e.horsePower);
     }
@@ -34,7 +36,7 @@ public class Car {
             System.out.println(a);
             //  System.out.println(doorCount); не доступны не статичные элементы
             this.horsePower = horsePower;
-            countObj+=1;
+            countObj += 1;
         }
 
         @Override
@@ -48,7 +50,7 @@ public class Car {
 
 class TestCar {
     public static void main(String[] args) {
-        Car car = new Car("Red", 4,300 );
+        Car car = new Car("Red", 4, 300);
         System.out.println(car);
     }
 }

@@ -2,7 +2,8 @@ package collection.set_interface;
 
 import collection.map_interface.Cat;
 
-import java.util.*;
+import java.util.Set;
+import java.util.TreeSet;
 
 //В основе лежит трии меп, вместо знаения в этой меп подставляется константа
 //Триисет это урезанная копия триимеп. Отсортированы по возрастанию

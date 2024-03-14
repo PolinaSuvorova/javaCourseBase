@@ -2,7 +2,6 @@ package collection.map_interface;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 // дефолтный вид equals сравнение через == двух объектов
 // При переопределении equals переопредели и hashCode при работе с коллекцией HashMap

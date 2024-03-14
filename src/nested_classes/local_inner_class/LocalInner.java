@@ -10,9 +10,10 @@ public class LocalInner {
         math1.getResult();
     }
 }
-class Math1{
-    public void getResult(){
-        class Delenie{
+
+class Math1 {
+    public void getResult() {
+        class Delenie {
             private int delimoe;
             private int delitel;
 
@@ -23,7 +24,8 @@ class Math1{
             public void setDelitel(int delitel) {
                 this.delitel = delitel;
             }
-            public int getChastnoe(){
+
+            public int getChastnoe() {
                 return delimoe / delitel;
             }
         }

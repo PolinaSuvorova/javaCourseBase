@@ -1,5 +1,7 @@
 package collection.map_interface;
+
 import java.util.Hashtable;
+
 //Устаревший класс использовался в многопоточности
 // Ни ключ, ни значение не могут быть null
 // Вместо него лучше использовать конкарент хешмеп
@@ -23,5 +25,5 @@ public class HashTableExample {
         //Выводится по возрастанию
         System.out.println(hashTable);
     }
-    }
+}
 

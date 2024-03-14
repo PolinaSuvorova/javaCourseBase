@@ -2,7 +2,7 @@ package collection.map_interface;
 
 import java.util.Objects;
 
-public class Cat implements Comparable<Cat>{
+public class Cat implements Comparable<Cat> {
     final String name;
     final Integer age;
     final String color;

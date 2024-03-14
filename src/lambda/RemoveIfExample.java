@@ -14,8 +14,8 @@ public class RemoveIfExample {
         list.add("GHG");
         list.add("AGAAAAA");
 
-        list.removeIf(element -> element.length()<5);
-        Predicate<String> p = element -> element.length()>5;
+        list.removeIf(element -> element.length() < 5);
+        Predicate<String> p = element -> element.length() > 5;
         list.removeIf(p);
     }
 }

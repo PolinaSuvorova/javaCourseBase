@@ -13,11 +13,11 @@ class Car {
         this.doorCount = doorCount;
         this.engine = engine;
     }
-    public void method(){
+
+    public void method() {
         Engine e = new Engine(200);
         System.out.println(e.horsePower);
     }
-
 
 
     @Override
@@ -35,9 +35,9 @@ class Car {
 
         public Engine(int horsePower) {
             System.out.println(a);
-          //  System.out.println(doorCount); не доступны не статичные элементы
+            //  System.out.println(doorCount); не доступны не статичные элементы
             this.horsePower = horsePower;
-            countObj+=1;
+            countObj += 1;
         }
 
         @Override

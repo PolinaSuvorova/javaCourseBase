@@ -17,8 +17,8 @@ public class PriorityQueueExamp1 {
         queue.add(4);
 
         System.out.println(queue);// выведет необязательно в порядке возврастания, но читает удаляет по приоритету
-            System.out.println(queue.peek()); // 1 4 8 9 10  - наивысший приоритет у 1
-            queue.poll();
+        System.out.println(queue.peek()); // 1 4 8 9 10  - наивысший приоритет у 1
+        queue.poll();
         System.out.println(queue.peek());
 // обязательно должен быть сомпаратор или интерфейс компарабле
         Queue<Cat> queueCat = new PriorityQueue<>();
