@@ -1,6 +1,6 @@
 package multithrading;
 
-public class SinhronizeExample {
+public class SynchronizeExample {
     public static void main(String[] args) throws InterruptedException {
         MyThread7 r1 = new MyThread7();
         Thread t1  = new Thread(r1);
@@ -28,6 +28,7 @@ class Counter{
     public synchronized static void increment() {
         Counter.count++;
         System.out.print(Counter.count + " ");
+        System.out.println(Thread.currentThread().getName());
     }
 }
 class MyThread7 implements Runnable {
