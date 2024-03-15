@@ -1,6 +1,6 @@
 package multithrading;
 
-public class MainRunnableExample implements Runnable{
+public class MainRunnableExample implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 1000; i++) {

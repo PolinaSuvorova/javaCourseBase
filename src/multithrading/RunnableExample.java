@@ -13,19 +13,19 @@ public class RunnableExample {
     }
 }
 
-class MyThread3 implements Runnable{
+class MyThread3 implements Runnable {
     @Override
     public void run() {
-        for (int i = 0; i < 1000 ; i++) {
+        for (int i = 0; i < 1000; i++) {
             System.out.println("Thread3 " + i);
         }
     }
 }
 
-class MyThread4 implements Runnable{
+class MyThread4 implements Runnable {
     @Override
     public void run() {
-        for (int i = 1000; i > 0 ; i--) {
+        for (int i = 1000; i > 0; i--) {
             System.out.println("Thread4 " + i);
         }
     }
