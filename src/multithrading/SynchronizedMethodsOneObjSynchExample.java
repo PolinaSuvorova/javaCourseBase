@@ -1,8 +1,12 @@
 package multithrading;
 
-public class SynchronizedMethodsExample {
+// Вывод последовательных звонков
+public class SynchronizedMethodsOneObjSynchExample {
 
     // Синхронизация вещается на объект целиком или Класс
+    // Если указать в методе синхронизацию,
+    // то у каждого будет свой монитор и будет синхронизация по разным объектам
+    // чтобы не было этого синхронизируем по одному объекту
     static final Object lock = new Object();
 
 
@@ -56,21 +60,21 @@ public class SynchronizedMethodsExample {
 class RunnableImpMobile implements Runnable {
     @Override
     public void run() {
-        new SynchronizedMethodsExample().mobileCall();
+        new SynchronizedMethodsOneObjSynchExample().mobileCall();
     }
 }
 
 class RunnableImpSkype implements Runnable {
     @Override
     public void run() {
-        new SynchronizedMethodsExample().skypeCall();
+        new SynchronizedMethodsOneObjSynchExample().skypeCall();
     }
 }
 
 class RunnableImpWatsapp implements Runnable {
     @Override
     public void run() {
-        new SynchronizedMethodsExample().watsappCall();
+        new SynchronizedMethodsOneObjSynchExample().watsappCall();
     }
 }
 
