@@ -2,7 +2,8 @@ package multithrading;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-// Операции класса AtomicInteger атомарны и не надо писать синхронайзд чтобы потоки не пересекались
+// Операции класса AtomicInteger атомарны и не надо писать синхронайзд
+// чтобы потоки не пересекались
 public class AtomicIntegerExample {
     static int counter = 0;
     static AtomicInteger counterAtomic = new AtomicInteger(0);
