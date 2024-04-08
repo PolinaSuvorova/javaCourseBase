@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+// + Любая реализация коллекции в обёртке
+// + Нет коллизий в данных
+// - Медленный
+// - Обход коллекции не синхронизирован
+// - Нет атомарных операций
 public class SynchronizedCollectionExample {
     public static void main(String[] args) throws InterruptedException {
         ArrayList<Integer> source = new ArrayList<>();

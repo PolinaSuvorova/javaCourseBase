@@ -7,8 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 // ConcurrentHashMap имплементирует интерфейс ConcurrentMap
 // Данный класс позволят одновременно в нескольких сегментах
 // (по умолчанию создаются 16 сегментов, т.е. 16 потоков могут изменять читать одновременно
-// данные )
-// изменять элементы. Блокируя его при изменении, не блокируя его при чтении
+// данные ) изменять элементы. Блокируя его при изменении, не блокируя его при чтении
 // Ни key, ни value не могут быть NULL
 public class ConcurrentHashMapExample {
     public static void main(String[] args) throws InterruptedException {

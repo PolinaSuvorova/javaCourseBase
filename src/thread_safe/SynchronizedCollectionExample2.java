@@ -19,7 +19,7 @@ public class SynchronizedCollectionExample2 {
         List<Integer> sincList = Collections.synchronizedList(source);
 
         Runnable runnable1 = () -> {
-            synchronized (sincList) {
+            synchronized (sincList) { // обход коллекции не синхронизирован ,поэтому оборачиваем в synchronized
                 Iterator<Integer> iterator = sincList.iterator();
                 while (iterator.hasNext()) {
                     System.out.println(iterator.next());

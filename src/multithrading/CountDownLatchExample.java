@@ -7,6 +7,10 @@ import java.util.concurrent.CountDownLatch;
 // Внутрь класса передаётся кол-во операций, которые должны завершится,
 // чтобы потоки продолжили свою работу
 // Обратный отсёт
+// Одноразовое использование. Как только счётчик достигне 0 его нельзя переиспользовать
+// Одни потоки ждут, другие - информируют барьер
+// Блокирующие методы ожидания
+// Аналог аннотации @PostConstruct
 public class CountDownLatchExample {
     static CountDownLatch countDownLatch = new CountDownLatch(3);
     public static void main(String[] args) throws InterruptedException {

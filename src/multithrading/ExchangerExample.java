@@ -6,6 +6,9 @@ import java.util.concurrent.Exchanger;
 
 // Игра камень ножницы бумага
 // Обмен информацией в один момент от разных потоков
+// Двухсторонний обмен информацией
+// Переиспользование объектов
+// Может учавствовать только два потока, имеет ограниченый инструмент использования
 public class ExchangerExample {
     public static void main(String[] args) {
      Exchanger<Action> exchanger = new Exchanger<>();

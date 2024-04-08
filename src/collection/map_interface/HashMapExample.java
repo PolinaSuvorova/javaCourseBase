@@ -2,7 +2,10 @@ package collection.map_interface;
 
 import java.util.HashMap;
 import java.util.Map;
-
+// HashMap -
+// Структура данных которая хранит элементы в виде ключ значение
+// В хешмап есть массив начальных элементов которые называются бакетами
+// Чтобы добавить значение мы считаем хеш ключа и определяем его бакет
 public class HashMapExample {
     public static void main(String[] args) {
         // Не хранит порядок добавления,

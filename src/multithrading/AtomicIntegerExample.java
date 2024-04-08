@@ -4,6 +4,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 // Операции класса AtomicInteger атомарны и не надо писать синхронайзд
 // чтобы потоки не пересекались
+// атомарные типы решают проблему в volatile переменных read-modify-write (count++)
+// AtomicReference - используется для обновления объектов
+// AtomicStampReference - сравнивает версии, которые сравниваются если знаения одинаковые
 public class AtomicIntegerExample {
     static int counter = 0;
     static AtomicInteger counterAtomic = new AtomicInteger(0);
