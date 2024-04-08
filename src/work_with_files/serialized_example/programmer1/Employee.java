@@ -5,7 +5,7 @@ import java.io.Serializable;
 // Чтобы Объект мог быть сериализирован и десереализирован нужно указать интерфейс Serializable
 public class Employee implements Serializable {
     static final long serialVersionUID = 2; // обозначает версия класса
-    private  String name;
+    private   String name;
     private  String surname;
     private  Integer age;
 
@@ -13,7 +13,7 @@ public class Employee implements Serializable {
     transient private String  department;
 
     private Car car;
-
+    public Employee(){};
     public Employee(String name,
                     String surname,
                     Integer age,
@@ -24,6 +24,18 @@ public class Employee implements Serializable {
         this.department = department;
         this.car = car;
         this.surname = surname;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     @Override
